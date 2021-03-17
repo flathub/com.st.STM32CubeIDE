@@ -45,6 +45,9 @@ modules:
     buildsystem: simple
     build-commands: 
       - mkdir ${FLATPAK_DEST}/stm32cubeide
+      - chmod +x st-stlink-server.2.0.2-1-linux-amd64.install.sh
+      - ./st-stlink-server.2.0.2-1-linux-amd64.install.sh --tar -xvf
+      - mv stlink-server ${FLATPAK_DEST}/bin/stlink-server
       - chmod +x st-stm32cubeide_1.6.0_9614_20210223_1703_amd64.sh
       - ./st-stm32cubeide_1.6.0_9614_20210223_1703_amd64.sh --tar -xvf
       - tar -xzvf st-stm32cubeide_1.6.0_9614_20210223_1703_amd64.tar.gz -C ${FLATPAK_DEST}/stm32cubeide/
@@ -56,6 +59,9 @@ modules:
       - type: archive
         url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/ae/14/92/47/df/86/45/1e/stm32cubeide_lnx/files/st-stm32cubeide_1.6.0_9614_20210223_1703_amd64.sh.zip/jcr:content/translations/en.st-stm32cubeide_1.6.0_9614_20210223_1703_amd64.sh.zip
         sha256: 003ba2abbeda8c9178254460452e58dc34a73de26a0b9cc9645db7290e83c86b
+      - type: archive
+        url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/85/60/5e/a3/9e/77/43/c0/st-link-serveur/files/st-link-server.zip/jcr:content/translations/en.st-link-server.zip
+        sha256: 0f695db0d72fbd674ca6e20bbe7448ad68f4c88e9cdbeec352050a22b9ca296b
       - type: file
         path: com.st.STM32CubeIDE.metainfo.xml
       - type: file
