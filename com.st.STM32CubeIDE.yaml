@@ -58,7 +58,7 @@ modules:
     sources:
       - type: archive
         url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/d5/f6/71/a8/3f/91/40/97/stm32cubeide_lnx/files/st-stm32cubeide_1.7.0_10852_20210715_0634_amd64.sh.zip/jcr:content/translations/en.st-stm32cubeide_1.7.0_10852_20210715_0634_amd64.sh.zip
-        sha256: 8e3375a55c0737d722d9831c77f145f11de07c8a9f575688e07b4aba982e0a9b
+        sha256: bfe2fb78652cbea961c46da9a71640b3b00eaf8137d6f258622638d65fb85ae1
       - type: archive
         url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/85/60/5e/a3/9e/77/43/c0/st-link-serveur/files/st-link-server.zip/jcr:content/translations/en.st-link-server.zip
         sha256: 0f695db0d72fbd674ca6e20bbe7448ad68f4c88e9cdbeec352050a22b9ca296b
