@@ -67,9 +67,6 @@ modules:
       - type: archive
         url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/85/60/5e/a3/9e/77/43/c0/st-link-serveur/files/st-link-server.zip/jcr:content/translations/en.st-link-server.zip
         sha256: 45a751051c64cff9fa9797462131a8e5cfee5fba7911c6e69fee5b03f2bd15e3
-        x-checker-data:
-          type: rotating-url
-          url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/85/60/5e/a3/9e/77/43/c0/st-link-serveur/files/st-link-server.zip/jcr:content/translations/en.st-link-server.zip
       - type: file
         path: com.st.STM32CubeIDE.metainfo.xml
       - type: file
