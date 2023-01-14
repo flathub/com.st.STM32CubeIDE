@@ -17,10 +17,16 @@
 		<p>
 		STM32CubeIDE also includes standard and advanced debugging features including views of CPU core registers, memories, and peripheral registers, as well as live variable watch, Serial Wire Viewer interface, or fault analyzer.
 		</p>
+		<p>
+		Note: For flashing to work properly you will need to add udev rules according to your device. If your device has an id of 0483:374b (check lsusb), you will need to create a file in /etc/udev/rules.d/ with the contents:
+		SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", GROUP="users", MODE="0666"
+		and either reboot or run: sudo udevadm control --reload
+		</p>
 	</description>
 	<url type="homepage">https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html</url>
 	<launchable type="desktop-id">com.st.STM32CubeIDE.desktop</launchable>
 	<releases>
+		<release version="1.10.1" date="2022-07-07"/>
         	<release version="1.9.0" date="2022-05-26"/>
 		<release version="1.7.0" date="2021-07-19"/>
 		<release version="1.6.1" date="2021-03-31"/>
