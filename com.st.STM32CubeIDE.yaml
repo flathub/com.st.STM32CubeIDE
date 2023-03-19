@@ -57,17 +57,17 @@ modules:
       - chmod +x st-stlink-server.2.1.0-1-linux-amd64.install.sh
       - ./st-stlink-server.2.1.0-1-linux-amd64.install.sh --tar -xvf
       - mv stlink-server ${FLATPAK_DEST}/bin/stlink-server
-      - chmod +x st-stm32cubeide_1.10.1_12716_20220707_0928_amd64.sh
-      - ./st-stm32cubeide_1.10.1_12716_20220707_0928_amd64.sh --tar -xvf
-      - tar -xzvf st-stm32cubeide_1.10.1_12716_20220707_0928_amd64.tar.gz -C ${FLATPAK_DEST}/stm32cubeide/
+      - chmod +x st-stm32cubeide_1.12.0_14980_20230301_1550_amd64.sh
+      - ./st-stm32cubeide_1.12.0_14980_20230301_1550_amd64.sh --tar -xvf
+      - tar -xzvf st-stm32cubeide_1.12.0_14980_20230301_1550_amd64.tar.gz -C ${FLATPAK_DEST}/stm32cubeide/
       - install -D icon.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.st.STM32CubeIDE.desktop
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.st.STM32CubeIDE.metainfo.xml
       - install -t ${FLATPAK_DEST}/bin -Dm755 stm32cubeide
     sources:
       - type: archive
-        url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/e7/6e/03/0a/97/9f/49/2d/stm32cubeide_lnx/files/st-stm32cubeide_1.10.1_12716_20220707_0928_amd64.sh.zip/jcr:content/translations/en.st-stm32cubeide_1.10.1_12716_20220707_0928_amd64.sh.zip
-        sha256: d657b57a837ca523ac43f03e65ce9cceff2a7f914e49a33a75ce4471f600e93b
+        url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/bc/99/f5/62/06/da/4d/eb/stm32cubeide_lnx/files/st-stm32cubeide_1.12.0_14980_20230301_1550_amd64.sh.zip/jcr:content/translations/en.st-stm32cubeide_1.12.0_14980_20230301_1550_amd64.sh.zip
+        sha256: 287129ea5d1fc283ae34404ccb15891f8e767587d43f9c43504ee9cdb73d55f7
       - type: archive
         url: https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/09/9f/79/67/ed/f9/45/d0/st-link-server_v2-1-0/files/st-link-server_v2-1-0.zip/jcr:content/translations/en.st-link-server_v2-1-0.zip
         sha256: 135d924b303b8838b45fe5078def02037502f93023520f6003690fb754a1e123
