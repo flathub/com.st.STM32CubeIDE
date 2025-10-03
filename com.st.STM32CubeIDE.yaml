@@ -9,6 +9,7 @@ finish-args:
   - --socket=x11
   - --socket=pulseaudio
   - --share=network
+  - --share=ipc
   - --filesystem=home
   - --device=all
   - --env=PATH=/app/bin:/app/jdk/bin:/usr/bin
